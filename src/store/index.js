@@ -7,6 +7,7 @@ export default new Vuex.Store({
     state: {
         routeData:[],
         selectedMoudle:{},
+        selectedMenu:{}
     },
     mutations: {
         routeDataInit(state,payload){
@@ -15,6 +16,9 @@ export default new Vuex.Store({
         changeSelectedMoudle(state,payload){
             state.selectedMoudle = payload
         },
+        changeSelectdMenu(state,payload){
+            
+        }
     },
     actions: {
     },

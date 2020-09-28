@@ -22,7 +22,7 @@
             <el-col :span="2">
                 <div class="menu">
                     <div class="moduleName"><span style="margin-left:20px">{{moduleName}}</span></div>
-                    <div class="disactive-menuName" v-for="(item,index) in menu" :key="index">
+                    <div class="disactive-menuName" v-for="(item,index) in menu" :key="index" @click="selectedMenu(item)">
                         <i class="el-icon-s-operation menuIcon"></i><span>{{item.meta?item.meta.title:''}}</span>
                     </div>
                 </div>
@@ -43,6 +43,7 @@ export default {
     data(){
         return{
             menuData:menuData,
+            selectedMenu:{}
         }
     },
     computed:{
@@ -63,6 +64,11 @@ export default {
             }else{
                 this.$router.push({path: item.children[0].path})
             }
+        },
+        selectedMenu(item){
+            this.selectedMenu = item
+            this.$router.push({path: item.path})
+            debugger
         }
     }
 }
