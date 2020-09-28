@@ -24,10 +24,10 @@ const routes =[
         meta: { title: '流程管理' },
         children: [
             {
-              path: '/Index',
-              name: 'Index',
+              path: '/Index1',
+              name: 'Index1',
               component: Index,
-              meta: { title: '首页',moduleName:'流程管理'},
+              meta: { title: '流程管理1',moduleName:'流程管理'},
             },
         ]
     },
@@ -38,10 +38,10 @@ const routes =[
         meta: { title: '项目管理' },
         children: [
             {
-              path: '/Index',
-              name: 'Index',
+              path: '/Index2',
+              name: 'Index2',
               component: Index,
-              meta: { title: '首页',moduleName:'项目管理'},
+              meta: { title: '项目管理1',moduleName:'项目管理'},
             },
         ]
     },
@@ -52,10 +52,10 @@ const routes =[
         meta: { title: '发票管理' },
         children: [
             {
-              path: '/Index',
-              name: 'Index',
+              path: '/Index3',
+              name: 'Index3',
               component: Index,
-              meta: { title: '首页',moduleName:'发票管理'},
+              meta: { title: '发票管理1',moduleName:'发票管理'},
             },
         ]
     },
@@ -66,10 +66,10 @@ const routes =[
         meta: { title: '产品定价' },
         children: [
             {
-              path: '/Index',
-              name: 'Index',
+              path: '/Index4',
+              name: 'Index4',
               component: Index,
-              meta: { title: '首页',moduleName:'产品定价'},
+              meta: { title: '产品定价1',moduleName:'产品定价'},
             },
         ]
     },

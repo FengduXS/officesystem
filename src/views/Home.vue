@@ -43,12 +43,14 @@ export default {
     data(){
         return{
             menuData:menuData,
-            menu:[],
         }
     },
     computed:{
         'moduleName': function(){
             return this.$store.state.selectedMoudle.meta.title
+        },
+        'menu':function(){
+            return this.$store.state.selectedMoudle.children
         }
     },
     mounted(){
@@ -57,10 +59,8 @@ export default {
     methods:{
         selectMoudle(item){
             if(item.meta.title == '首页'){
-                this.menu = []
                 this.$router.push({path: item.path})
             }else{
-                this.menu = item.children
                 this.$router.push({path: item.children[0].path})
             }
         }

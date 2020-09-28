@@ -8,10 +8,7 @@ const router = new VueRouter({
   routes
 })
 router.beforeEach((to, from, next) => {
-  console.log(to)
-  store.commit("changeSelectedMoudle",routes.filter(item => {
-    return item.meta.title == to.meta.moduleName
-  })[0])
+  store.commit("changeSelectedMoudle",routes.filter(item => item.meta.title == to.meta.moduleName)[0])
   next()
 })
 export default router
