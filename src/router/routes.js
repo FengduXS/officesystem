@@ -1,6 +1,10 @@
 import Home from '../views/Home.vue'
 import Index from '../views/index/index.vue'
+//费用管理
 import travelReimbursement from '../views/costManage/travelReimbursement/travelReimbursement.vue'
+import costReimbursement from '../views/costManage/costReimbursement/costReimbursement.vue'
+import loan from '../views/costManage/loan/loan.vue'
+import costAnalysis from '../views/costManage/costAnalysis/costAnalysis.vue'
 const routes =[
     {
         path: '/',
@@ -30,21 +34,21 @@ const routes =[
             meta: { title: '差旅报销',moduleName:'费用管理'},
           },
           {
-            path: '/cosrlReimbursement',
-            name: 'cosrlReimbursement',
-            component: travelReimbursement,
+            path: '/costReimbursement',
+            name: 'costReimbursement',
+            component: costReimbursement,
             meta: { title: '费用报销',moduleName:'费用管理'},
           },
           {
             path: '/loan',
             name: 'loan',
-            component: travelReimbursement,
+            component: loan,
             meta: { title: '借款',moduleName:'费用管理'},
           },
           {
             path: '/costAnalysis',
             name: 'costAnalysis',
-            component: travelReimbursement,
+            component: costAnalysis,
             meta: { title: '费用统计分析',moduleName:'费用管理'}
           }
       ]
@@ -89,7 +93,7 @@ const routes =[
     },
     {
       path: '/projectManage',
-      name: 'Home',
+      name: 'projectManage',
       component: Home,
       meta: { title: '项目管理' },
       children: [
@@ -132,13 +136,13 @@ const routes =[
             meta: { title: '待开发票',moduleName:'发票管理'},
           },
           {
-            path: '/Index33',
+            path: '/Index333',
             name: 'Index345',
             component: Index,
             meta: { title: '已开发票',moduleName:'发票管理'},
           },
           {
-            path: '/Index33',
+            path: '/Index3453',
             name: 'Index345',
             component: Index,
             meta: { title: '我申请的',moduleName:'发票管理'},
@@ -150,7 +154,7 @@ const routes =[
             meta: { title: '废弃发票',moduleName:'发票管理'},
           },
           {
-            path: '/Index333',
+            path: '/Index3335',
             name: 'Index3453',
             component: Index,
             meta: { title: '回款列表',moduleName:'发票管理'},
