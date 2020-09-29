@@ -10,7 +10,6 @@ const $axios ={
             url:url
         }
         if(params) config.params = params
-        console.log(service)
         return service(config)
     },
     post(url,params){

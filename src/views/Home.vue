@@ -18,8 +18,8 @@
                 </el-dropdown>
             </div>
         </div>
-        <el-row :gutter="26">
-            <el-col :span="4">
+        <el-row>
+            <el-col :span="3">
                 <div class="menu">
                     <div class="moduleName"><span style="margin-left:20px">{{moduleName}}</span></div>
                     <template v-for="(item,index) in menu">
@@ -29,7 +29,7 @@
                     </template>
                 </div>
             </el-col>
-            <el-col :span="22">
+            <el-col :span="21">
                 <div class="router">
                     <router-view/>
                 </div>
